@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgd"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editTextfrag5sggp4gg531f"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Type here to leave a Comment!"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment"
+        android:id="@+id/buttonfrag5sggp4gg531f"
+        android:layout_below="@+id/editTextfrag5sggp4gg531f"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="#FFFFFF"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/button1frag5sggp4gg531f"
+        android:layout_below="@+id/editTextfrag5sggp4gg531f"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="#FFFFFF"
+        />
+    <ProgressBar
+        android:id="@+id/progressBarssggp4gg531ffrag5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonfrag5sggp4gg531f"
+        android:layout_centerHorizontal="true"
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipesggp4gg531ffrag5"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="110dp"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sggp4gg531ffrag5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

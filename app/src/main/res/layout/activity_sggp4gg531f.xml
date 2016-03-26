@@ -1,0 +1,94 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sggp4gg531froot_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobikit.mobikit.samsungphones.sggp4gg531f.sggp4gg531f"
+    android:background="#FFFFFF"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/sggp4gg531fapp_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/sggp4gg531fcollapsing_toolbar_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_sggp4gg531f"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/sggp4gg531fapp_bar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Rs. 9,290 - Rs. 13,400"
+                android:textColor="@color/primaryColor"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:id="@+id/textviewsggp4gg51f"
+                />
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <TextView
+                android:layout_below="@+id/textviewsggp4gg51f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Samsung Galaxy Grand Plus 4G "
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/textview1sggp4gg51f"
+                />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/sggp4gg531ftab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/accentColor"
+                app:layout_collapseMode="pin"
+                app:tabMode="scrollable"
+                app:tabIndicatorColor="@color/primaryColor"
+                app:tabTextAppearance="@style/TextAppearance.Design.Tab"
+                app:tabSelectedTextColor="@android:color/holo_red_light"
+                app:tabTextColor="#EEE" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/sggp4gg531fview_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

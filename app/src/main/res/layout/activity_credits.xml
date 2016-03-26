@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobikit.mobikit.credits">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:scrollbarStyle="insideInset"
+
+        >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+    <LinearLayout
+        android:id="@+id/tab1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+android:background="@drawable/backgd"
+        android:gravity="center_horizontal"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:layout_below="@+id/app_bar4"
+        android:id="@+id/creditstextView"
+        android:layout_centerHorizontal="true"
+         />
+    </LinearLayout>
+    </TableLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/app_bar4"
+        layout="@layout/app_bar"></include>
+</RelativeLayout>

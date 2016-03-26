@@ -1,0 +1,56 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dualsimphonesdrawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobikit.mobikit.dualsimphone.DualSimPhones"
+    android:background="@drawable/backgd"
+    >
+
+    <RelativeLayout
+        android:id="@+id/dualsimphonesmain_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/dualsimphonesapp_bar"
+            layout="@layout/app_bar"></include>
+
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBardualsimphoneslist1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipedualsimphoneslist"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/dualsimphonesapp_bar"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/dualsimphoneslist"
+                android:layout_below="@+id/dualsimphonesfilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/dualsimphonesmain_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/activity_drawer_header"
+        app:itemIconTint="@color/accentColor"
+        app:itemTextColor="@color/colorTextSecondary"
+        app:menu="@menu/menu_drawer_header" />
+</android.support.v4.widget.DrawerLayout>
+
+

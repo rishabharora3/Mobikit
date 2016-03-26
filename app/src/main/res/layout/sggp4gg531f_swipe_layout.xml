@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CollapsingToolbarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/collapsing_toolbar_layout_sggp4gg531f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways">
+    <ImageView
+    android:id="@+id/image_sggp4gg531f"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:scaleType="fitCenter"
+    app:layout_collapseMode="parallax"
+    />
+</android.support.design.widget.CollapsingToolbarLayout>

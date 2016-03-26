@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/androidphones_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/action_bar"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/androidphonescardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/androidphoneslistIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/sgcp4g" />
+
+        <TextView
+            android:id="@+id/androidphoneslistText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="5dp"
+            android:text="Dummy name"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/androidphoneslistText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="50dp"
+            android:text="Dummy price"
+            android:textColor="@color/primaryColor"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/androidphoneslistText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="80dp"
+            android:text="Dummy info"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:id="@+id/androidphonescheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="90dp"/>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

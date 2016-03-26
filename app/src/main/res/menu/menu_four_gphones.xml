@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mobikit.mobikit.FourGphones">
+
+
+    <item
+        android:id="@+id/action_viewprofile"
+        android:orderInCategory="100"
+        android:title="View Profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Log Out"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:orderInCategory="200"
+        android:title="@string/next1"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/addUser"
+        android:icon="@drawable/ic_account_circle_white_24dp"
+        android:orderInCategory="200"
+        android:title="@string/next"
+        app:showAsAction="always"></item>
+</menu>

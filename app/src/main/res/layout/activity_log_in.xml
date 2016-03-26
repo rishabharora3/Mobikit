@@ -1,0 +1,75 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobikit.mobikit.login.logIn">
+
+    <FrameLayout
+        android:id="@+id/main_content1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgd"
+        >
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"></include>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mUserNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp">
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:hint="Username:"
+
+                android:textSize="20dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:hint="Password:"
+                android:inputType="textPassword"
+                android:textSize="20dp"
+              />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/bLogin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="175dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:onClick="submit"
+            android:background="@drawable/roundedbutton"
+            />
+
+
+    </FrameLayout>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+

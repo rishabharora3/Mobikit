@@ -1,0 +1,874 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobikit.mobikit.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgd">
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="none">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="1">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <android.support.v4.view.ViewPager
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="248dp"
+                        android:id="@+id/viewpager_layout"/>
+                    <Button
+                        android:id="@+id/threedmodel"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/roundedbutton"
+                        android:text="3D MODEL"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/topphones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="TOP PHONES"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/topphonesmore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:text="MORE"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/item_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:background="#FFFFFF"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardCornerRadius="10dp">
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollVieweng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:fillViewport="false"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="#FFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/ib1"
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyj14ghd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyj14ghd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy \n        J1 4G" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/ib2"
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/htcdesire816gdualsimhd" />
+
+                                    <TextView
+                                        android:id="@+id/htcdesire816gdualsimhd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="HTC Desire 816G \n        Dual Sim"
+
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/ib3"
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxye7hd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxye7hd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy E7" />
+
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/ib4"
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/sonyxperiam4aquahd" />
+
+                                    <TextView
+                                        android:id="@+id/sonyxperiam4aquahd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Sony Xperia \n M4 Aqua Dual"
+
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxygrandprime4ghd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxygrandprime4ghd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy\nGrand Prime 4G"
+
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/androidphones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="ANDROID PHONES"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/androidphonesmore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="100dp"
+                            android:text="MORE"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:background="#FFFFFF"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardCornerRadius="10dp">
+
+                        <HorizontalScrollView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:fillViewport="false"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="#FFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyon7hd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyon7hd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy \n        On7" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyj7hd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyj7hd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy j7"
+
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyj14ghd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyj14ghd1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy\n      J14G" />
+
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyj5hd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyj5hd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy J5"
+
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/htcdesire816gdualsimhd" />
+
+                                    <TextView
+                                        android:id="@+id/htcdesire816gdualsimhd1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="HTC Desire 816G\n  Dual Sim"
+
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/dualsimphones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Dual Simp Phones"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/dualsimphonesmore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="120dp"
+                            android:text="MORE"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:background="#FFFFFF"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardCornerRadius="10dp">
+
+                        <HorizontalScrollView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:fillViewport="false"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="#FFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyon7hd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyon7hd1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy \n        On7" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyj7hd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyj7hd1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy J7"
+
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyj14ghd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyj14ghd2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy \n         J14G" />
+
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyj5hd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyj5hd1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy J5"
+
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/htcdesire816gdualsimhd" />
+
+                                    <TextView
+                                        android:id="@+id/htcdesire816gdualsimhd2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Htc Desire 816G\n       dual Sim"
+
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/budgetphones"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="BUDGET PHONES"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/budgetphonesmore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:text="MORE"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:background="#FFFFFF"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardCornerRadius="10dp">
+
+                        <HorizontalScrollView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:fillViewport="false"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="#FFFFFF">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyj14ghd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyj14ghd3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy \n        J1 4G" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyon5hd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyon5hd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy On5"
+
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/samsunggalaxyj2hd" />
+
+                                    <TextView
+                                        android:id="@+id/samsunggalaxyj2hd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Samsung Galaxy J2" />
+
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/lenovok3notehd" />
+
+                                    <TextView
+                                        android:id="@+id/lenovok3notehd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Lenovo K3 \n   Note"
+
+                                        />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="7dp"
+                                    android:layout_height="fill_parent"
+                                    android:background="@drawable/backgd"
+
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="130dp"
+                                        android:layout_height="140dp"
+                                        android:src="@drawable/xiaomiredmi2primehd" />
+
+                                    <TextView
+                                        android:id="@+id/xiaomiredmi2primehd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Xiaomi Redmi \n   2 Prime"
+
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+            </TableLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"></include>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/main_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/activity_drawer_header"
+        app:itemIconTint="@color/accentColor"
+        app:itemTextColor="@color/colorTextSecondary"
+        app:menu="@menu/menu_drawer_header" />
+</android.support.v4.widget.DrawerLayout>

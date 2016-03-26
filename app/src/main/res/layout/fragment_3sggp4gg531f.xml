@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CollapsingToolbarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentScrim="?attr/colorPrimary"
+    app:layout_scrollFlags="scroll|enterAlways"
+    android:background="@drawable/backgd"
+    >
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gmapssggp4gg531f"
+        android:background="@drawable/gmaps"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+</android.support.design.widget.CollapsingToolbarLayout>
