@@ -205,6 +205,7 @@ t2.setOnClickListener(new View.OnClickListener() {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Linked to another app!",Toast.LENGTH_SHORT).show();
                 openApp(getBaseContext(), "exam.lenovopc.cube");
             }
         });

@@ -30,6 +30,7 @@ public class Fragment3sggp4gg531f extends Fragment {
         i1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getActivity(),"Linked to another app!",Toast.LENGTH_SHORT).show();
                 openApp(getActivity(), "com.example.sony.demomaps");
             }
         });
